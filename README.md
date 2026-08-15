@@ -2,6 +2,8 @@
 
 > 🌐 **语言 / Language**：<a href="#/">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="README.en.md">English</a>
 
+> 🚀 **立即使用**：<a href="https://gitstq.github.io/DataScope/"><b>在线预览</b>（免安装，浏览器直接打开）</a> 🔗 | <a href="https://github.com/gitstq/DataScope/releases/latest"><b>📦 下载 v1.0.0</b>（Web 即用包）</a> ⬇️
+
 **DataScope** 是一款 **零依赖、可离线、浏览器端运行的 JSON / YAML / TOML / CSV 结构可视化与智能编辑工作台**。它把复杂的数据文件渲染成可折叠的彩色结构树，让你既能「一眼看懂」，又能「直接编辑」——而这一切都发生在本机浏览器里，**数据不出本地，绝不上传云端**。🔒
 
 > 🐣 **灵感来源**：`jless` 这类终端工具只能「看」不能「改」，`jq` 又需要写过滤器、学习曲线陡峭；而在线 JSON 查看器会把你的敏感配置传到第三方服务器。DataScope 填补了「**本地可视化 + 可编辑 + 多格式互转**」这个空白，开箱即用、隐私无忧。

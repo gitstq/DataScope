@@ -2,6 +2,8 @@
 
 > 🌐 **Language / 语言**：<a href="README.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="#/">English</a>
 
+> 🚀 **Try it now**: <a href="https://gitstq.github.io/DataScope/"><b>Live preview</b> (no install, open in browser)</a> 🔗 | <a href="https://github.com/gitstq/DataScope/releases/latest"><b>📦 Download v1.0.0</b> (Web package)</a> ⬇️
+
 **DataScope** is a **zero-dependency, offline, browser-based JSON / YAML / TOML / CSV structure visualizer and smart editor**. It renders complex data files into a collapsible, color-coded structure tree, so you can both "grasp it at a glance" and "edit it directly" — all inside your local browser. **Your data never leaves your machine and is never uploaded anywhere.** 🔒
 
 > 🐣 **Inspiration**: terminal tools like `jless` are read-only, `jq` requires writing filters with a steep learning curve, and online JSON viewers send your sensitive configs to third-party servers. DataScope fills the gap of "**local visualization + editing + multi-format conversion**" — works out of the box with total privacy.
