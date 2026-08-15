@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-JsonLens build script.
+DataScope build script.
 Copies the static assets into a self-contained `dist/` folder that can be
 served by any static file server or opened directly. Zero runtime dependencies.
 """

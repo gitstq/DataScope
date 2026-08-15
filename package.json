@@ -1,7 +1,7 @@
 {
   "name": "jsonlens",
   "version": "1.0.0",
-  "description": "JsonLens · 结构透镜 — 零依赖、离线的 JSON/YAML/TOML 结构可视化与智能编辑工作台 | Zero-dependency offline JSON/YAML/TOML structure visualizer & smart editor",
+  "description": "DataScope · 结构透镜 — 零依赖、离线的 JSON/YAML/TOML 结构可视化与智能编辑工作台 | Zero-dependency offline JSON/YAML/TOML structure visualizer & smart editor",
   "type": "module",
   "main": "server.js",
   "scripts": {

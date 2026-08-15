@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * JsonLens - Zero-dependency static file server.
+ * DataScope - Zero-dependency static file server.
  * Serves the project directory so the app can be used offline from any browser.
  */
 import { createServer } from 'node:http';
@@ -60,5 +60,5 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`\n  JsonLens server running at  http://localhost:${PORT}\n  Press Ctrl+C to stop.\n`);
+  console.log(`\n  DataScope server running at  http://localhost:${PORT}\n  Press Ctrl+C to stop.\n`);
 });

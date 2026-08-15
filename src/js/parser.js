@@ -1,12 +1,12 @@
 /**
- * JsonLens core parser & serializer.
+ * DataScope core parser & serializer.
  * Self-developed, zero-dependency parsers for JSON / YAML / TOML / CSV.
  * Supports the common subset of each format used in real-world config files.
  */
 
 /* eslint-disable no-control-regex */
 
-const JsonLensParser = (() => {
+const DataScopeParser = (() => {
   // ---------------------------------------------------------------
   // Helpers
   // ---------------------------------------------------------------
@@ -606,6 +606,6 @@ const JsonLensParser = (() => {
 })();
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = JsonLensParser;
+  module.exports = DataScopeParser;
 }
-export default JsonLensParser;
+export default DataScopeParser;

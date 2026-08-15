@@ -13,9 +13,9 @@ test('JSON minify', () => {
 });
 
 test('YAML parse basic mapping', () => {
-  const yaml = 'name: JsonLens\nversion: 1.0.0\nactive: true';
+  const yaml = 'name: DataScope\nversion: 1.0.0\nactive: true';
   const data = Parser.YAMLParse(yaml);
-  assert.equal(data.name, 'JsonLens');
+  assert.equal(data.name, 'DataScope');
   assert.equal(data.active, true);
 });
 
@@ -42,7 +42,7 @@ test('YAML stringify round-trip', () => {
 });
 
 test('TOML basic + table + array of tables', () => {
-  const toml = `project = "JsonLens"
+  const toml = `project = "DataScope"
 version = "1.0.0"
 tags = ["a", "b"]
 
@@ -58,7 +58,7 @@ port = 443
 name = "dev"
 port = 8080`;
   const data = Parser.TOMLParse(toml);
-  assert.equal(data.project, 'JsonLens');
+  assert.equal(data.project, 'DataScope');
   assert.deepEqual(data.tags, ['a', 'b']);
   assert.equal(data.config.theme, 'dark');
   assert.equal(data.servers.length, 2);

@@ -1,6 +1,6 @@
-# Contributing to JsonLens
+# Contributing to DataScope
 
-Thanks for your interest in making JsonLens better! 🎉
+Thanks for your interest in making DataScope better! 🎉
 
 ## Ways to contribute
 

@@ -1,10 +1,10 @@
-# ◈ JsonLens · The Structure Lens
+# ◈ DataScope · The Structure Lens
 
 > 🌐 **Language / 语言**：<a href="README.md">简体中文</a> · <a href="README.zh-TW.md">繁體中文</a> · <a href="#/">English</a>
 
-**JsonLens** is a **zero-dependency, offline, browser-based JSON / YAML / TOML / CSV structure visualizer and smart editor**. It renders complex data files into a collapsible, color-coded structure tree, so you can both "grasp it at a glance" and "edit it directly" — all inside your local browser. **Your data never leaves your machine and is never uploaded anywhere.** 🔒
+**DataScope** is a **zero-dependency, offline, browser-based JSON / YAML / TOML / CSV structure visualizer and smart editor**. It renders complex data files into a collapsible, color-coded structure tree, so you can both "grasp it at a glance" and "edit it directly" — all inside your local browser. **Your data never leaves your machine and is never uploaded anywhere.** 🔒
 
-> 🐣 **Inspiration**: terminal tools like `jless` are read-only, `jq` requires writing filters with a steep learning curve, and online JSON viewers send your sensitive configs to third-party servers. JsonLens fills the gap of "**local visualization + editing + multi-format conversion**" — works out of the box with total privacy.
+> 🐣 **Inspiration**: terminal tools like `jless` are read-only, `jq` requires writing filters with a steep learning curve, and online JSON viewers send your sensitive configs to third-party servers. DataScope fills the gap of "**local visualization + editing + multi-format conversion**" — works out of the box with total privacy.
 
 ---
 
@@ -35,8 +35,8 @@
 ### 🏃 Option 1: Open directly (fastest)
 
 ```bash
-git clone https://github.com/gitstq/JsonLens.git
-cd JsonLens
+git clone https://github.com/gitstq/DataScope.git
+cd DataScope
 open index.html        # macOS
 start index.html       # Windows
 xdg-open index.html    # Linux
@@ -45,7 +45,7 @@ xdg-open index.html    # Linux
 ### 🖥️ Option 2: Local server (recommended)
 
 ```bash
-cd JsonLens
+cd DataScope
 npm start              # starts at http://localhost:8080
 # or
 node server.js --port 8080
@@ -56,7 +56,7 @@ Open **http://localhost:8080** in your browser.
 ### 🐍 Option 3: Python one-liner
 
 ```bash
-cd JsonLens
+cd DataScope
 python3 -m http.server 8000   # visit http://localhost:8000
 ```
 
@@ -80,7 +80,7 @@ On launch, the left "Source" panel is pre-filled with a sample JSON. The right "
 
 ### 3️⃣ Format switching & conversion
 
-Use the top **JSON / YAML / TOML / CSV** tabs to switch anytime. JsonLens parses the current data and losslessly serializes it to the target format — **no data is lost**. Great for writing configs in YAML, calling APIs with JSON, or working with CSV tables.
+Use the top **JSON / YAML / TOML / CSV** tabs to switch anytime. DataScope parses the current data and losslessly serializes it to the target format — **no data is lost**. Great for writing configs in YAML, calling APIs with JSON, or working with CSV tables.
 
 | Scenario | Recommended format |
 |----------|--------------------|
@@ -106,7 +106,7 @@ Click **◐ Redact** in the toolbar; fields like `password`, `apiKey`, `token`, 
 
 ### Design philosophy
 
-JsonLens is built on the principles of **"zero-dependency, offline-first, privacy-first"**. All parsers (YAML / TOML / CSV) are **self-developed**, with no third-party libraries, enabling single-file usage, full offline capability, and data that never leaves the browser. The UI follows a "data lens" lab aesthetic — dark base, neon accents, restrained typography — so the data itself is the star.
+DataScope is built on the principles of **"zero-dependency, offline-first, privacy-first"**. All parsers (YAML / TOML / CSV) are **self-developed**, with no third-party libraries, enabling single-file usage, full offline capability, and data that never leaves the browser. The UI follows a "data lens" lab aesthetic — dark base, neon accents, restrained typography — so the data itself is the star.
 
 ### Tech choices
 
@@ -129,7 +129,7 @@ JsonLens is built on the principles of **"zero-dependency, offline-first, privac
 ### Build
 
 ```bash
-cd JsonLens
+cd DataScope
 npm run build        # produces a self-contained dist/ folder
 python3 -m http.server 8000 --directory dist
 ```
@@ -164,4 +164,4 @@ python3 -m http.server 8000 --directory dist
 
 Licensed under the **MIT License**. Free to use, modify, commercialize, and redistribute. See [LICENSE](LICENSE).
 
-⭐ If JsonLens helps you, please give it a star and share it with friends!
+⭐ If DataScope helps you, please give it a star and share it with friends!

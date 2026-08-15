@@ -1,9 +1,9 @@
 /**
- * JsonLens utility functions: JSONPath, statistics, redaction, tree ops.
+ * DataScope utility functions: JSONPath, statistics, redaction, tree ops.
  */
 
-const JsonLensUtils = (() => {
-  const { isPlainObject } = { ...(typeof JsonLensParser !== 'undefined' ? { isPlainObject: JsonLensParser.isPlainObject } : {}) };
+const DataScopeUtils = (() => {
+  const { isPlainObject } = { ...(typeof DataScopeParser !== 'undefined' ? { isPlainObject: DataScopeParser.isPlainObject } : {}) };
 
   function isObj(v) { return v !== null && typeof v === 'object' && !Array.isArray(v); }
   function typeName(v) {
@@ -140,6 +140,6 @@ const JsonLensUtils = (() => {
 })();
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports.JsonLensUtils = JsonLensUtils;
+  module.exports.DataScopeUtils = DataScopeUtils;
 }
-export default JsonLensUtils;
+export default DataScopeUtils;

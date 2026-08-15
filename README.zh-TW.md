@@ -1,10 +1,10 @@
-# ◈ JsonLens · 結構透鏡
+# ◈ DataScope · 結構透鏡
 
 > 🌐 **語言 / Language**：<a href="README.md">简体中文</a> · <a href="#/">繁體中文</a> · <a href="README.en.md">English</a>
 
-**JsonLens** 是一款 **零依賴、可離線、瀏覽器端執行的 JSON / YAML / TOML / CSV 結構視覺化與智能編輯工作台**。它把複雜的資料檔案渲染成可摺疊的彩色結構樹，讓你既能「一眼看懂」，又能「直接編輯」——而這一切都發生在本機瀏覽器裡，**資料不出本機，絕不上傳雲端**。🔒
+**DataScope** 是一款 **零依賴、可離線、瀏覽器端執行的 JSON / YAML / TOML / CSV 結構視覺化與智能編輯工作台**。它把複雜的資料檔案渲染成可摺疊的彩色結構樹，讓你既能「一眼看懂」，又能「直接編輯」——而這一切都發生在本機瀏覽器裡，**資料不出本機，絕不上傳雲端**。🔒
 
-> 🐣 **靈感來源**：`jless` 這類終端工具只能「看」不能「改」，`jq` 又需要寫過濾器、學習曲線陡峭；而線上 JSON 檢視器會把你的敏感配置傳到第三方伺服器。JsonLens 填補了「**本機視覺化 + 可編輯 + 多格式互轉**」這個空白，開箱即用、隱私無憂。
+> 🐣 **靈感來源**：`jless` 這類終端工具只能「看」不能「改」，`jq` 又需要寫過濾器、學習曲線陡峭；而線上 JSON 檢視器會把你的敏感配置傳到第三方伺服器。DataScope 填補了「**本機視覺化 + 可編輯 + 多格式互轉**」這個空白，開箱即用、隱私無憂。
 
 ---
 
@@ -35,8 +35,8 @@
 ### 🏃 方式一：直接開啟（最快）
 
 ```bash
-git clone https://github.com/gitstq/JsonLens.git
-cd JsonLens
+git clone https://github.com/gitstq/DataScope.git
+cd DataScope
 open index.html        # macOS
 start index.html       # Windows
 xdg-open index.html    # Linux
@@ -45,7 +45,7 @@ xdg-open index.html    # Linux
 ### 🖥️ 方式二：本機起服務（推薦）
 
 ```bash
-cd JsonLens
+cd DataScope
 npm start              # 自動在 http://localhost:8080 啟動
 # 或直接用 Node 執行
 node server.js --port 8080
@@ -56,7 +56,7 @@ node server.js --port 8080
 ### 🐍 方式三：Python 簡易服務
 
 ```bash
-cd JsonLens
+cd DataScope
 python3 -m http.server 8000
 # 開啟 http://localhost:8000
 ```
@@ -81,7 +81,7 @@ python3 -m http.server 8000
 
 ### 3️⃣ 格式切換與互轉
 
-頂部 **JSON / YAML / TOML / CSV** 標籤可隨時切換。切換時 JsonLens 會先解析目前資料，再無損序列化為目標格式，**資料不會遺失**。非常適合用 YAML 寫配置、用 JSON 傳介面、用 CSV 做表格的場景。
+頂部 **JSON / YAML / TOML / CSV** 標籤可隨時切換。切換時 DataScope 會先解析目前資料，再無損序列化為目標格式，**資料不會遺失**。非常適合用 YAML 寫配置、用 JSON 傳介面、用 CSV 做表格的場景。
 
 | 場景 | 推薦格式 |
 |------|----------|
@@ -107,7 +107,7 @@ python3 -m http.server 8000
 
 ### 設計理念
 
-JsonLens 堅持 **「零依賴、離線優先、隱私第一」** 的核心理念。所有解析器（YAML / TOML / CSV）均為 **自研實作**，不依賴任何第三方函式庫，因此可以做到單檔直開、完全離線、資料不出瀏覽器。介面遵循「資料透鏡」實驗室美學——深色底、霓虹高亮、克制排版，讓資料本身成為主角。
+DataScope 堅持 **「零依賴、離線優先、隱私第一」** 的核心理念。所有解析器（YAML / TOML / CSV）均為 **自研實作**，不依賴任何第三方函式庫，因此可以做到單檔直開、完全離線、資料不出瀏覽器。介面遵循「資料透鏡」實驗室美學——深色底、霓虹高亮、克制排版，讓資料本身成為主角。
 
 ### 技術選型
 
@@ -134,7 +134,7 @@ JsonLens 堅持 **「零依賴、離線優先、隱私第一」** 的核心理�
 ### 建置產物
 
 ```bash
-cd JsonLens
+cd DataScope
 npm run build        # 產生自包含的 dist/ 目錄
 python3 -m http.server 8000 --directory dist
 ```
@@ -169,4 +169,4 @@ python3 -m http.server 8000 --directory dist
 
 本專案基於 **MIT License** 開源，可自由使用、修改、商用與再散佈。詳見 [LICENSE](LICENSE)。
 
-⭐ 如果 JsonLens 有幫助到你，歡迎點個 Star，也歡迎分享給需要的朋友！
+⭐ 如果 DataScope 有幫助到你，歡迎點個 Star，也歡迎分享給需要的朋友！

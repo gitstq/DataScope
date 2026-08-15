@@ -1,5 +1,5 @@
 /**
- * JsonLens main application logic.
+ * DataScope main application logic.
  * Zero-dependency offline JSON/YAML/TOML structure visualizer & smart editor.
  */
 import Parser from './parser.js';
@@ -30,7 +30,7 @@ const App = (() => {
   // ---- Sample data ----
   const SAMPLES = {
     json: `{
-  "project": "JsonLens",
+  "project": "DataScope",
   "version": "1.0.0",
   "author": "琦琦",
   "tags": ["json", "yaml", "toml", "offline"],
@@ -52,7 +52,7 @@ const App = (() => {
     { "name": "dev", "host": "localhost", "port": 8080 }
   ]
 }`,
-    yaml: `project: JsonLens
+    yaml: `project: DataScope
 version: 1.0.0
 author: 琦琦
 tags:
@@ -77,7 +77,7 @@ servers:
   - name: dev
     host: localhost
     port: 8080`,
-    toml: `project = "JsonLens"
+    toml: `project = "DataScope"
 version = "1.0.0"
 author = "琦琦"
 tags = ["json", "yaml", "toml", "offline"]
@@ -484,7 +484,7 @@ Dave,qa,false,75`,
       `数据大小: ${formatBytes(state.data)}`,
       `类型分布: ${distStr}`,
     ].join('\n');
-    alert('📊 JsonLens 结构统计\n\n' + info);
+    alert('📊 DataScope 结构统计\n\n' + info);
   }
 
   function switchFormat(fmt) {
